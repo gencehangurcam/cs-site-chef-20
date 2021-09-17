@@ -13286,8 +13286,32 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
-* {
-  text-decoration: none;
-  color: black; }
+header .navbar {
+  position: absolute;
+  z-index: 1; }
+  header .navbar ul {
+    border-top: solid black 1px;
+    border-bottom: solid black 1px; }
+  header .navbar a {
+    color: black !important; }
+header .carousel-indicators button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; }
+header .what {
+  background-color: blue;
+  width: 200px;
+  height: 100px; }
+  header .what p {
+    font-family: "font-titre"; }
+
+@media screen and (max-width: 500px) {
+  .nav-link {
+    font-size: 10px;
+    margin: 0;
+    padding: 0 7px; }
+
+  .px-3 img {
+    width: 20px; } }
 
 /*# sourceMappingURL=app.css.map */
