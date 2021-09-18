@@ -13290,19 +13290,21 @@ header .navbar {
   position: absolute;
   z-index: 1; }
   header .navbar ul {
-    border-top: solid black 1px;
-    border-bottom: solid black 1px; }
+    border-top: solid white 1px;
+    border-bottom: solid white 1px; }
   header .navbar a {
-    color: black !important; }
-header .carousel-indicators button {
+    color: white !important; }
+header .carousel {
+  position: relative !important; }
+  header .carousel .carousel-indicators button {
+    border-radius: 100%; }
+  header .carousel .carousel-inner img {
+    filter: brightness(50%) !important; }
+header .whatever {
   width: 200px;
-  height: 200px;
-  border-radius: 50%; }
-header .what {
-  background-color: blue;
-  width: 200px;
-  height: 100px; }
-  header .what p {
+  height: 100px;
+  position: absolute; }
+  header .whatever p {
     font-family: "font-titre"; }
 
 @media screen and (max-width: 500px) {
@@ -13311,7 +13313,44 @@ header .what {
     margin: 0;
     padding: 0 7px; }
 
-  .px-3 img {
+  .logo-nav img {
     width: 20px; } }
+.section-1-container {
+  background-image: url("../../assets/images/main_bg.jpg"); }
+  .section-1-container .section-1 {
+    background-color: white; }
+  .section-1-container .menu-sec-1 {
+    position: relative; }
+    .section-1-container .menu-sec-1 .bord-bas-gauche {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    .section-1-container .menu-sec-1 .bord-bas-droite {
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+    .section-1-container .menu-sec-1 .bord-haut-gauche {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .section-1-container .menu-sec-1 .bord-haut-droite {
+      position: absolute;
+      right: 0;
+      top: 0; }
+
+@media screen and (max-width: 500px) {
+  .bord-bas-gauche img {
+    width: 50px; }
+
+  .bord-bas-droite img {
+    width: 50px; }
+
+  .bord-haut-gauche img {
+    width: 50px; }
+
+  .bord-haut-droite img {
+    width: 50px; } }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: "font-titre"; }
 
 /*# sourceMappingURL=app.css.map */

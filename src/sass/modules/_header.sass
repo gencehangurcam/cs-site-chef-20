@@ -1,32 +1,40 @@
+// header     
 header
+    // navbar
     .navbar
         position: absolute
         z-index: 1
         ul
-            border-top: solid black 1px
-            border-bottom: solid black 1px
+            border-top: solid white 1px
+            border-bottom: solid white 1px
         a
-            color: black !important
-    .carousel-indicators
-        button 
-            width: 200px
-            height: 200px
-            border-radius: 50%
-    .what
-        background-color: blue
+            color: white !important
+    //carousel
+    .carousel
+        position: relative !important
+        // button carousel
+        .carousel-indicators
+            button
+                border-radius: 100% 
+        // img carousel
+        .carousel-inner
+            img
+                filter: brightness(50%) !important
+    
+    // txt in center header (carousel)
+    .whatever
         width: 200px
         height: 100px
+        position: absolute
         p
             font-family: "font-titre"
     
-
-
-
+// responsive header 
 @media screen and (max-width: 500px)
     .nav-link
         font-size: 10px
         margin: 0
         padding: 0 7px
-    .px-3
+    .logo-nav
         img
             width: 20px
