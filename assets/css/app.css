@@ -13397,6 +13397,14 @@ header .carousel {
 
   .bord-haut-droite img {
     width: 50px; } }
+.sec-2 {
+  text-transform: uppercase; }
+  .sec-2 .meet p {
+    margin-bottom: 0;
+    margin-top: 20px; }
+  .sec-2 .meet img {
+    width: 200px; }
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "font-titre"; }
 
