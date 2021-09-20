@@ -13286,6 +13286,12 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+footer div h5, footer div .h5 {
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-transform: uppercase; }
+footer div:nth-of-type(2) {
+  height: 50px; }
+
 header .navbar {
   position: absolute;
   width: 100%;
@@ -13464,6 +13470,16 @@ header .gg-img {
     position: absolute;
     right: 0;
     top: 0; }
+
+.sec-4 .sec-4-txt {
+  border: solid white 0.5px;
+  border-radius: 10px; }
+
+.sec-5 {
+  background-image: url("../../assets/images/main_bg.jpg"); }
+  .sec-5 div {
+    width: 300px;
+    border-radius: 10px !important; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "font-titre"; }
