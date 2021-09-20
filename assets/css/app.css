@@ -13335,8 +13335,15 @@ header .carousel {
       text-transform: uppercase; }
     header .carousel .whatever .taste {
       color: #c42d40; }
+    header .carousel .whatever .whititle {
+      color: white !important; }
     header .carousel .whatever div button {
       border-radius: 20px; }
+header .gg-img {
+  background-image: url("../../assets/images/bottom_decoration_img.png");
+  width: 100%;
+  height: 10px;
+  background-color: black; }
 
 @media screen and (max-width: 620px) {
   header .navbar .nav-link {
@@ -13352,9 +13359,11 @@ header .carousel {
       padding: 0 20px;
       font-size: 15px; }
     header .carousel .whatever button {
-      font-size: 10px; } }
+      font-size: 10px; }
+    header .carousel .whatever span {
+      font-size: 20px; } }
 @media screen and (min-width: 620px) and (max-width: 1024px) {
-  .sec-2 .sec-2-chef img {
+  .sec-2-chef img {
     width: 150px; } }
 .section-1-container {
   background-image: url("../../assets/images/main_bg.jpg"); }
@@ -13382,10 +13391,32 @@ header .carousel {
       position: absolute;
       right: 0;
       top: 0; }
+  .section-1-container .sec-1-menu {
+    margin: 15px 0; }
   .section-1-container .menu-cafe img {
     width: 45px; }
+  .section-1-container .menu-cafe button {
+    background-color: #ced4da; }
+    .section-1-container .menu-cafe button p {
+      margin: 0;
+      color: #c42d40; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
+  .sec-1-menu {
+    margin: 20px 0; }
+
+  .bord-bas-gauche img {
+    width: 50px; }
+
+  .bord-bas-droite img {
+    width: 50px; }
+
+  .bord-haut-gauche img {
+    width: 50px; }
+
+  .bord-haut-droite img {
+    width: 50px; } }
+@media screen and (min-width: 620px) and (max-width: 1024px) {
   .bord-bas-gauche img {
     width: 50px; }
 
@@ -13401,11 +13432,45 @@ header .carousel {
   text-transform: uppercase; }
   .sec-2 .meet p {
     margin-bottom: 0;
-    margin-top: 20px; }
+    padding-top: 25px; }
   .sec-2 .meet img {
-    width: 200px; }
+    width: 200px;
+    margin-bottom: 15px; }
+  .sec-2 .sec-2-chef {
+    text-transform: lowercase; }
+
+.section-3-container {
+  background-image: url("../../assets/images/main_bg.jpg");
+  position: relative; }
+  .section-3-container .contact-form {
+    border-radius: 20px; }
+  .section-3-container .btnContact {
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase; }
+  .section-3-container .bord-bas-gauche {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .section-3-container .bord-bas-droite {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .section-3-container .bord-haut-gauche {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .section-3-container .bord-haut-droite {
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "font-titre"; }
+
+span {
+  color: #c42d40;
+  font-family: "font-titre";
+  font-size: 2rem; }
 
 /*# sourceMappingURL=app.css.map */
