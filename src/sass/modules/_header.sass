@@ -3,38 +3,100 @@ header
     // navbar
     .navbar
         position: absolute
+        width: 100%
         z-index: 1
         ul
             border-top: solid white 1px
             border-bottom: solid white 1px
         a
             color: white !important
+            text-transform: uppercase
+            margin: 0 20px
+            font-size: 2rem
+
     //carousel
     .carousel
-        position: relative !important
+        position: relative
         // button carousel
         .carousel-indicators
             button
-                border-radius: 100% 
+                position: relative
+                width: 14px
+                height: 14px
+                border-radius: 100%
+                &::after
+                    display: none
+                    position: absolute
+                    top: 2px
+                    left: 2px
+                    width: 10px
+                    height: 10px
+                    content: ""
+                    border: 2px solid blue
+                    border-radius: 20px
+            button.active
+                &::after
+                    display: block
+
         // img carousel
         .carousel-inner
             img
-                filter: brightness(50%) !important
+                filter: brightness(20%) !important
     
-    // txt in center header (carousel)
-    .whatever
-        width: 200px
-        height: 100px
-        position: absolute
-        p
-            font-family: "font-titre"
-    
+        // txt in center header (carousel)
+        .whatever
+            position: absolute
+            margin: 0 auto 
+            padding: 0 40%
+            left: 0
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            font-size: 50px
+            color: white
+            p
+                font-family: "font-titre"
+            span
+                text-transform: uppercase
+            .taste
+                color: $danger
+
+            div
+                button
+                    border-radius: 20px
+        
+        
 // responsive header 
-@media screen and (max-width: 500px)
-    .nav-link
-        font-size: 10px
-        margin: 0
-        padding: 0 7px
-    .logo-nav
-        img
-            width: 20px
+@media screen and (max-width: 620px)
+    header
+        .navbar
+            .nav-link
+                font-size: 20px
+            a
+                img
+                    width: 50px
+        .carousel
+            .whatever
+                padding: 0 50px
+                margin: 0
+                margin-top: 15px
+                font-size: 25px
+                p
+                    padding: 0 20px
+                    font-size: 15px
+                button
+                    font-size: 10px
+        
+        
+// responsive header for ipad 
+@media screen and (min-width: 620px) and (max-width: 1024px)
+    header
+        .nav-link
+        .logo-nav
+            img
+        .carousel
+            .whatever
+    .sec-2
+        .sec-2-chef
+            img
+                width: 150px

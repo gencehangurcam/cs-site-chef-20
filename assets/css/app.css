@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "font-titre";
-  src: url(../../assets/fonts/DancingScript-SemiBold.ttf); }
+  src: url(../../assets/fonts/Courgette-Regular.ttf); }
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -13288,37 +13288,82 @@ textarea.form-control-lg {
     display: none !important; } }
 header .navbar {
   position: absolute;
+  width: 100%;
   z-index: 1; }
   header .navbar ul {
     border-top: solid white 1px;
     border-bottom: solid white 1px; }
   header .navbar a {
-    color: white !important; }
+    color: white !important;
+    text-transform: uppercase;
+    margin: 0 20px;
+    font-size: 2rem; }
 header .carousel {
-  position: relative !important; }
+  position: relative; }
   header .carousel .carousel-indicators button {
+    position: relative;
+    width: 14px;
+    height: 14px;
     border-radius: 100%; }
+    header .carousel .carousel-indicators button::after {
+      display: none;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 10px;
+      height: 10px;
+      content: "";
+      border: 2px solid blue;
+      border-radius: 20px; }
+  header .carousel .carousel-indicators button.active::after {
+    display: block; }
   header .carousel .carousel-inner img {
-    filter: brightness(50%) !important; }
-header .whatever {
-  width: 200px;
-  height: 100px;
-  position: absolute; }
-  header .whatever p {
-    font-family: "font-titre"; }
+    filter: brightness(20%) !important; }
+  header .carousel .whatever {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 40%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: white; }
+    header .carousel .whatever p {
+      font-family: "font-titre"; }
+    header .carousel .whatever span {
+      text-transform: uppercase; }
+    header .carousel .whatever .taste {
+      color: #c42d40; }
+    header .carousel .whatever div button {
+      border-radius: 20px; }
 
-@media screen and (max-width: 500px) {
-  .nav-link {
-    font-size: 10px;
+@media screen and (max-width: 620px) {
+  header .navbar .nav-link {
+    font-size: 20px; }
+  header .navbar a img {
+    width: 50px; }
+  header .carousel .whatever {
+    padding: 0 50px;
     margin: 0;
-    padding: 0 7px; }
-
-  .logo-nav img {
-    width: 20px; } }
+    margin-top: 15px;
+    font-size: 25px; }
+    header .carousel .whatever p {
+      padding: 0 20px;
+      font-size: 15px; }
+    header .carousel .whatever button {
+      font-size: 10px; } }
+@media screen and (min-width: 620px) and (max-width: 1024px) {
+  .sec-2 .sec-2-chef img {
+    width: 150px; } }
 .section-1-container {
   background-image: url("../../assets/images/main_bg.jpg"); }
   .section-1-container .section-1 {
     background-color: white; }
+    .section-1-container .section-1 span {
+      color: #c42d40;
+      font-size: 2rem;
+      text-transform: uppercase; }
   .section-1-container .menu-sec-1 {
     position: relative; }
     .section-1-container .menu-sec-1 .bord-bas-gauche {
@@ -13337,8 +13382,10 @@ header .whatever {
       position: absolute;
       right: 0;
       top: 0; }
+  .section-1-container .menu-cafe img {
+    width: 45px; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .bord-bas-gauche img {
     width: 50px; }
 
