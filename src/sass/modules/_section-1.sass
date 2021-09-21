@@ -9,12 +9,29 @@
             text-transform: uppercase
     .sec-1-menu
         .breakfast
-            a
-                text-decoration: none
-                color: gray
-            i:hover 
-                color: red
-        
+            border-right: 1px solid gray
+            div
+                border-bottom: 1px solid gray
+                margin-bottom: 10px
+                a
+                    text-decoration: none
+                    color: $gray-500
+                a:hover 
+                    color: red
+    .sec-1-menu
+        margin: 15px 0
+    .menu-cafe
+        .d-flex
+            margin-bottom: 10px
+            border-bottom: 1px solid gray
+
+        img
+            width: 45px
+        button
+            background-color: $gray-400
+            p
+                margin: 0
+                color: $danger    
             
     //
     .menu-sec-1
@@ -36,20 +53,7 @@
             position: absolute
             right: 0
             top: 0
-    .sec-1-menu
-        margin: 15px 0
-    .menu-cafe
-        img
-            width: 45px
-        button
-            background-color: $gray-400
-            p
-                margin: 0
-                color: $danger
-
-
-        
-
+            
 @media screen and (max-width: 620px)
     .breakfast
         margin: 20px 0

@@ -13393,11 +13393,28 @@ header .gg-img {
       color: #c42d40;
       font-size: 2rem;
       text-transform: uppercase; }
-  .section-1-container .sec-1-menu .breakfast a {
-    text-decoration: none;
-    color: gray; }
-  .section-1-container .sec-1-menu .breakfast i:hover {
-    color: red; }
+  .section-1-container .sec-1-menu .breakfast {
+    border-right: 1px solid gray; }
+    .section-1-container .sec-1-menu .breakfast div {
+      border-bottom: 1px solid gray;
+      margin-bottom: 10px; }
+      .section-1-container .sec-1-menu .breakfast div a {
+        text-decoration: none;
+        color: #adb5bd; }
+      .section-1-container .sec-1-menu .breakfast div a:hover {
+        color: red; }
+  .section-1-container .sec-1-menu {
+    margin: 15px 0; }
+  .section-1-container .menu-cafe .d-flex {
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray; }
+  .section-1-container .menu-cafe img {
+    width: 45px; }
+  .section-1-container .menu-cafe button {
+    background-color: #ced4da; }
+    .section-1-container .menu-cafe button p {
+      margin: 0;
+      color: #c42d40; }
   .section-1-container .menu-sec-1 {
     position: relative; }
     .section-1-container .menu-sec-1 .bord-bas-gauche {
@@ -13416,15 +13433,6 @@ header .gg-img {
       position: absolute;
       right: 0;
       top: 0; }
-  .section-1-container .sec-1-menu {
-    margin: 15px 0; }
-  .section-1-container .menu-cafe img {
-    width: 45px; }
-  .section-1-container .menu-cafe button {
-    background-color: #ced4da; }
-    .section-1-container .menu-cafe button p {
-      margin: 0;
-      color: #c42d40; }
 
 @media screen and (max-width: 620px) {
   .breakfast {
