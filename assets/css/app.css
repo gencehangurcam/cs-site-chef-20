@@ -13408,8 +13408,12 @@ header .gg-img {
   .section-1-container .menu-cafe .d-flex {
     margin-bottom: 10px;
     border-bottom: 1px solid gray; }
+    .section-1-container .menu-cafe .d-flex p, .section-1-container .menu-cafe .d-flex h4, .section-1-container .menu-cafe .d-flex .h4 {
+      text-align: start;
+      font-family: Arial, Helvetica, sans-serif; }
   .section-1-container .menu-cafe img {
-    width: 45px; }
+    width: 45px;
+    margin-right: 10px; }
   .section-1-container .menu-cafe button {
     background-color: #ced4da; }
     .section-1-container .menu-cafe button p {
