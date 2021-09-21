@@ -13297,8 +13297,8 @@ footer div:nth-of-type(2) {
   height: 50px; }
 
 @media screen and (max-width: 620px) {
-  footer .row {
-    height: 700px; } }
+  footer .instagram {
+    margin-bottom: 100px; } }
 header .navbar {
   position: absolute;
   width: 100vw;
@@ -13356,12 +13356,17 @@ header .carousel {
     header .carousel .whatever div button {
       border-radius: 20px; }
 header .gg-img {
-  background-image: url("../../assets/images/bottom_decoration_img.png");
+  background-image: url("../images/bottom_decoration_img.png");
   width: 100%;
   height: 10px;
   background-color: black; }
 
 @media screen and (max-width: 620px) {
+  header .navbar img {
+    width: 50px; }
+  header .navbar ul {
+    background-color: black;
+    z-index: 3; }
   header .navbar .nav-link {
     font-size: 20px; }
   header .navbar a img {
@@ -13385,7 +13390,7 @@ header .gg-img {
   .carousel .whatever {
     width: 100%; } }
 .section-1-container {
-  background-image: url("../../assets/images/main_bg.jpg"); }
+  background-image: url("../images/main_bg.jpg"); }
   .section-1-container .section-1 {
     background-color: white; }
     .section-1-container .section-1 span {
@@ -13442,10 +13447,13 @@ header .gg-img {
     margin: 20px 0; }
     .breakfast div {
       display: flex;
+      justify-content: center;
       flex-direction: row !important;
       padding: 15px; }
-      .breakfast div div h3, .breakfast div div .h3 {
-        display: none; }
+      .breakfast div div {
+        font-size: 20px; }
+        .breakfast div div h3, .breakfast div div .h3 {
+          display: none; }
 
   .bord-bas-gauche img {
     width: 50px; }
@@ -13481,23 +13489,30 @@ header .gg-img {
   .sec-2 .sec-2-chef {
     text-transform: lowercase; }
 
+.sec-3 {
+  background-image: url("../images/main_bg.jpg"); }
+
 .section-3-container {
-  background-image: url("../../assets/images/main_bg.jpg");
+  background-color: white;
   position: relative; }
+  .section-3-container form {
+    width: 50%; }
   .section-3-container .contact-form {
     border-radius: 20px; }
   .section-3-container .btnContact {
     border-radius: 40px;
     border: none;
     text-transform: uppercase; }
-  .section-3-container .g-card .col-6 {
+  .section-3-container .g-card .pak {
+    position: relative;
     width: 350px; }
-    .section-3-container .g-card .col-6 .g-button {
+    .section-3-container .g-card .pak .g-button {
       background-color: #c42d40;
       border-radius: 15px;
       padding: 10px; }
-    .section-3-container .g-card .col-6 img {
+    .section-3-container .g-card .pak img {
       width: 300px;
+      height: 200px;
       border-radius: 15px;
       border: solid gray 1; }
   .section-3-container button {
@@ -13521,6 +13536,12 @@ header .gg-img {
 
 @media screen and (max-width: 620px) {
   .sec-3 .g-card div {
+    width: 100%; }
+    .sec-3 .g-card div img {
+      width: 200px;
+      height: 100px; }
+
+  .section-3-container form {
     width: 100%; } }
 .sec-4 .sec-4-txt {
   border: solid #6c757d 0.5px;
