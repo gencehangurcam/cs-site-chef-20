@@ -13301,7 +13301,7 @@ footer div:nth-of-type(2) {
     height: 700px; } }
 header .navbar {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   z-index: 1; }
   header .navbar ul {
     border-top: solid white 1px;
@@ -13342,7 +13342,7 @@ header .carousel {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 50px;
+    font-size: 3vw;
     color: white; }
     header .carousel .whatever p {
       font-family: "font-titre";
@@ -13370,8 +13370,7 @@ header .gg-img {
     width: 100%;
     padding: 0 50px;
     margin: 0;
-    margin-top: 15px;
-    font-size: 25px; }
+    margin-top: 15px; }
     header .carousel .whatever p {
       padding: 0 20px;
       font-size: 15px; }
@@ -13529,7 +13528,14 @@ header .gg-img {
 
 @media screen and (max-width: 620px) {
   .sec-4 {
-    padding: 0px 13px; } }
+    padding: 0px 13px; }
+    .sec-4 .col-sm-12 .row {
+      display: flex;
+      flex-direction: column; }
+    .sec-4 .col-sm-12 .testi-order .sec-4-txt {
+      order: 1; }
+    .sec-4 .col-sm-12 .testi-order .g-img {
+      order: 0; } }
 .sec-5 {
   background-image: url("../../assets/images/main_bg.jpg"); }
   .sec-5 div {
