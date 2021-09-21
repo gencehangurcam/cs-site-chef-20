@@ -13289,11 +13289,16 @@ textarea.form-control-lg {
 footer div h5, footer div .h5 {
   font-family: Arial, Helvetica, sans-serif !important;
   text-transform: uppercase; }
-footer div i {
-  padding: 10px; }
+footer div a {
+  padding: 10px;
+  text-decoration: none;
+  color: white; }
 footer div:nth-of-type(2) {
   height: 50px; }
 
+@media screen and (max-width: 620px) {
+  footer .row {
+    height: 700px; } }
 header .navbar {
   position: absolute;
   width: 100%;
@@ -13484,6 +13489,8 @@ header .gg-img {
       width: 300px;
       border-radius: 15px;
       border: solid gray 1; }
+  .section-3-container button {
+    border: none; }
   .section-3-container .bord-bas-gauche {
     position: absolute;
     right: 0;
@@ -13505,9 +13512,12 @@ header .gg-img {
   .sec-3 .g-card div {
     width: 100%; } }
 .sec-4 .sec-4-txt {
-  border: solid white 0.5px;
+  border: solid #6c757d 0.5px;
   border-radius: 10px; }
 
+@media screen and (max-width: 620px) {
+  .sec-4 {
+    padding: 0px 13px; } }
 .sec-5 {
   background-image: url("../../assets/images/main_bg.jpg"); }
   .sec-5 div {
@@ -13521,7 +13531,7 @@ header .gg-img {
     height: 10px;
     background-color: black; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "font-titre"; }
 
 span {
