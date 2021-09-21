@@ -15,7 +15,7 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -31,7 +31,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="logo-nav"></a>
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -114,25 +114,27 @@
             <div>
                 <h3><span>our</span> Menu List</h3>
             </div>
-            <div class="row sec-1-menu">
-                <div class="col-sm-12 col-md-2">
+            <div class="row sec-1-menu p-5">
+                <div class="breakfast col-sm-12 col-md-2">
                     <div class="grid flex-sm-row">
+                        <a href="">
+                            <div>
+                                <i class="fas fa-coffee fa-2x"></i>
+                                <h3>BreakFast</h3>
+                            </div>
+                        </a>
                         <div>
-                            <i class="fas fa-coffee"></i>
-                            <h3>BreakFast</h3>
-                        </div>
+                            <a href=""><i class="fas fa-utensils fa-2x"></i>
+                                <h3>BreakFast</h3>
+                        </div></a>
                         <div>
-                            <i class="fas fa-coffee"></i>
-                            <h3>BreakFast</h3>
-                        </div>
+                            <a href=""><i class="fas fa-hamburger fa-2x"></i>
+                                <h3>BreakFast</h3>
+                        </div></a>
                         <div>
-                            <i class="fas fa-coffee"></i>
-                            <h3>BreakFast</h3>
-                        </div>
-                        <div>
-                            <i class="fas fa-coffee"></i>
-                            <h3>BreakFast</h3>
-                        </div>
+                            <a href=""><i class="fas fa-coffee fa-2x"></i>
+                                <h3>BreakFast</h3>
+                        </div></a>
                     </div>
                 </div>
                 <!-- menu avec prix -->
@@ -335,22 +337,22 @@
                         <p class="text-center text-white py-3">for plus renseignement call 00000000014545245</p>
                         <div class="col-md-6">
                             <div class="form-group m-2">
-                                <input type="text" name="txtName" class="form-control" placeholder="Your Name *"
+                                <input type="text" name="txtName" class="form-control" placeholder="Your Name"
                                     value="" />
                             </div>
                             <div class="form-group m-2">
-                                <input type="text" name="txtName" class="form-control" placeholder="Your Name *"
+                                <input type="text" name="txtName" class="form-control" placeholder="enter id "
                                     value="" />
                             </div>
                             <div class="form-group m-2">
-                                <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *"
+                                <input type="text" name="txtEmail" class="form-control" placeholder="Your Email"
                                     value="" />
                             </div>
                             <div class="form-group m-2">
                                 <select class="form-select" required>
-                                    <option selected disabled value="">Position</option>
-                                    <option value="jweb">Junior Web Developer</option>
-                                    <option value="sweb">Senior Web Developer</option>
+                                    <option selected disabled value="">occasion</option>
+                                    <option value="jweb">anniversaire</option>
+                                    <option value="sweb">banquet</option>
                                     <option value="pmanager">Project Manager</option>
                                 </select>
                             </div>
@@ -362,10 +364,10 @@
                             </div>
                             <div class="form-group m-2">
                                 <select class="form-select" required>
-                                    <option selected disabled value="">Position</option>
-                                    <option value="jweb">Junior Web Developer</option>
-                                    <option value="sweb">Senior Web Developer</option>
-                                    <option value="pmanager">Project Manager</option>
+                                    <option selected disabled value="">cuisine</option>
+                                    <option value="jweb">asiatique</option>
+                                    <option value="sweb">francaise</option>
+                                    <option value="pmanager">arabe</option>
                                 </select>
                             </div>
                             <div class="form-group m-2">
@@ -392,31 +394,20 @@
                 <h1><span>OUR</span> Blog</h1>
                 <img src="./assets/images/decoration_line.png" width="200px" alt="line">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./assets/images/blog_img1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./assets/images/blog_img1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
+            <!-- card -->
+            <div class="row g-card justify-content-center">
+                <div class="col-6 m-5">
+                   <img src="./assets/images/menu_image_2.jpg" alt="img"> 
+                   <p class="g-button">12 april 2018/ 20 comments/ 35 likes</p>
+                   <h6>lorem ipsum</h6>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, excepturi?</p>
                 </div>
+                <div class="col-6 m-5">
+                    <img src="./assets/images/menu_image_2.jpg" alt="img"> 
+                    <p class="g-button">12 april 2018/ 20 comments/ 35 likes</p>
+                    <h6>lorem ipsum</h6>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, excepturi?</p>
+                 </div>
             </div>
             <!-- img sur les coins -->
             <div class="bord-bas-gauche">
@@ -465,31 +456,38 @@
     </section>
     <!-- sec-5 -->
     <section class="sec-5 text-center text-white">
-        <h3 class="text-dark"><span>OUR</span> Contact</h3>
+        <h3 class="text-dark pt-4"><span>OUR</span> Contact</h3>
         <img src="./assets/images/decoration_line.png" width="200px" alt="line">
-        <div class="bg-danger container rounded p-3">
-            <i class="fas fa-map-pin"></i>
+        <div class="bg-danger container rounded p-3 mb-4">
+            <i class="fas fa-map-pin fa-2x"></i>
             <p>Lorem ipsum dolor sit amet.</p>
             <hr>
-            <i class="fas fa-map-pin"></i>
+            <i class="fas fa-phone-volume fa-2x"></i>
             <p>Lorem ipsum dolor sit amet.</p>
             <hr>
-            <i class="fas fa-map-pin"></i>
+            <i class="fas fa-envelope-square fa-2x"></i>
             <p>Lorem ipsum dolor sit amet.</p>
             <hr>
         </div>
+        <div class="gg-img">
+        </div>
     </section>
+    <!-- footer -->
     <footer>
         <div class="row bg-dark text-white p-3">
             <div class="col">
                 <h5>about us</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus ducimus dolor nobis! Pariatur, esse!</p>
-                <i class="fas fa-map-pin"></i><i class="fas fa-map-pin"></i><i class="fas fa-map-pin"></i><i class="fas fa-map-pin"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus ducimus dolor
+                    nobis! Pariatur, esse!</p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-linkedin-in"></i>
             </div>
             <div class="col">
                 <h5>instagram</h5>
                 <div class="row">
-                    <div class="">
+                    <div class="ico">
                         <img src="./assets/images/menu_image_4.jpg" width="50px" alt="img">
                         <img src="./assets/images/menu_image_4.jpg" width="50px" alt="img">
                         <img src="./assets/images/menu_image_4.jpg" width="50px" alt="img">
@@ -510,7 +508,7 @@
                     <button class="btn bg-danger text-white border rounded-pill">Restaurant</button>
                     <button class="btn bg-danger text-white border rounded-pill">Restaurant</button>
                     <button class="btn bg-danger text-white border rounded-pill">Restaurant</button>
-                    <button class="btn bg-danger text-white border rounded-pill">Restaurant</button>                </div>
+                    <button class="btn bg-danger text-white border rounded-pill">Restaurant</button> </div>
             </div>
         </div>
         <div class="bg-danger">

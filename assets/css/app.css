@@ -13289,6 +13289,8 @@ textarea.form-control-lg {
 footer div h5, footer div .h5 {
   font-family: Arial, Helvetica, sans-serif !important;
   text-transform: uppercase; }
+footer div i {
+  padding: 10px; }
 footer div:nth-of-type(2) {
   height: 50px; }
 
@@ -13304,6 +13306,8 @@ header .navbar {
     text-transform: uppercase;
     margin: 0 20px;
     font-size: 2rem; }
+  header .navbar a:hover {
+    background-color: red; }
 header .carousel {
   position: relative; }
   header .carousel .carousel-indicators button {
@@ -13327,8 +13331,8 @@ header .carousel {
     filter: brightness(20%) !important; }
   header .carousel .whatever {
     position: absolute;
+    width: 50%;
     margin: 0 auto;
-    padding: 0 40%;
     left: 0;
     right: 0;
     top: 50%;
@@ -13336,7 +13340,8 @@ header .carousel {
     font-size: 50px;
     color: white; }
     header .carousel .whatever p {
-      font-family: "font-titre"; }
+      font-family: "font-titre";
+      line-height: 1em; }
     header .carousel .whatever span {
       text-transform: uppercase; }
     header .carousel .whatever .taste {
@@ -13357,6 +13362,7 @@ header .gg-img {
   header .navbar a img {
     width: 50px; }
   header .carousel .whatever {
+    width: 100%;
     padding: 0 50px;
     margin: 0;
     margin-top: 15px;
@@ -13370,7 +13376,10 @@ header .gg-img {
       font-size: 20px; } }
 @media screen and (min-width: 620px) and (max-width: 1024px) {
   .sec-2-chef img {
-    width: 150px; } }
+    width: 150px; }
+
+  .carousel .whatever {
+    width: 100%; } }
 .section-1-container {
   background-image: url("../../assets/images/main_bg.jpg"); }
   .section-1-container .section-1 {
@@ -13379,6 +13388,11 @@ header .gg-img {
       color: #c42d40;
       font-size: 2rem;
       text-transform: uppercase; }
+  .section-1-container .sec-1-menu .breakfast a {
+    text-decoration: none;
+    color: black; }
+  .section-1-container .sec-1-menu .breakfast i:hover {
+    color: red; }
   .section-1-container .menu-sec-1 {
     position: relative; }
     .section-1-container .menu-sec-1 .bord-bas-gauche {
@@ -13408,8 +13422,14 @@ header .gg-img {
       color: #c42d40; }
 
 @media screen and (max-width: 620px) {
-  .sec-1-menu {
+  .breakfast {
     margin: 20px 0; }
+    .breakfast div {
+      display: flex;
+      flex-direction: row !important;
+      padding: 15px; }
+      .breakfast div div h3, .breakfast div div .h3 {
+        display: none; }
 
   .bord-bas-gauche img {
     width: 50px; }
@@ -13454,6 +13474,16 @@ header .gg-img {
     border-radius: 40px;
     border: none;
     text-transform: uppercase; }
+  .section-3-container .g-card .col-6 {
+    width: 350px; }
+    .section-3-container .g-card .col-6 .g-button {
+      background-color: #c42d40;
+      border-radius: 15px;
+      padding: 10px; }
+    .section-3-container .g-card .col-6 img {
+      width: 300px;
+      border-radius: 15px;
+      border: solid gray 1; }
   .section-3-container .bord-bas-gauche {
     position: absolute;
     right: 0;
@@ -13471,6 +13501,9 @@ header .gg-img {
     right: 0;
     top: 0; }
 
+@media screen and (max-width: 620px) {
+  .sec-3 .g-card div {
+    width: 100%; } }
 .sec-4 .sec-4-txt {
   border: solid white 0.5px;
   border-radius: 10px; }
@@ -13480,6 +13513,13 @@ header .gg-img {
   .sec-5 div {
     width: 300px;
     border-radius: 10px !important; }
+    .sec-5 div i {
+      width: 100px !important; }
+  .sec-5 .gg-img {
+    background-image: url("../../assets/images/footer_bottom_decoration_img.png");
+    width: 100%;
+    height: 10px;
+    background-color: black; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "font-titre"; }
